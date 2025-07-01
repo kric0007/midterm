@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <h1>Lone Starfish</h1>
-        <img src="images/lone-starfish-wide.jpg" alt="this is a starfish banner">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Story</li>
-                <li>Content</li>
-            </ul>
-        </nav>
+        <img id="banner" src="images/lone-starfish-wide.jpg" alt="this is a starfish banner">
+
+        <section class="navbar">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li id="story">Story</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <article>
         <h2>Life of a Starfish</h2>
-        <img src="images/lone-starfish.jpg" alt="this is a starfish picture">
+        <img id="image1" src="images/lone-starfish.jpg" alt="this is a starfish picture">
         <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa
             silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian
             prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach
@@ -39,7 +43,7 @@
             Australian lungfish searobin false trevally, dottyback.</p>
     </article>
 
-    <article>
+    <article class="facts">
         <h3>Facts About Starfish</h3>
         <ul>
             <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
@@ -50,18 +54,18 @@
     </article>
 
     <article>
-        <h4>Contact to learn more</h4>
+        <h3>Contact to learn more</h3>
         <form action="/" method="post">
-            <label for="fullname">Your Name</label>
+            <label class="labelblock" for="fullname">Your Name</label>
             <input id="fullname" type="text" name="yourname">
 
-            <label for="email">Your Email</label>
+            <label class="labelblock" for="email">Your Email</label>
             <input id="email" type="text" name="youremail">
 
-            <label for="message">Your Message</label>
+            <label class="labelblock" for="message">Your Message</label>
             <textarea name="message" id="message"></textarea>
 
-            <label>Would you like to visit the starfish?</label>
+            <h4>Would you like to visit the starfish?</h4>
             <label for="yes">Yes</label>
             <input type="radio" id="yes" name="starfish" value="yes">
 
@@ -70,6 +74,8 @@
 
             <label for="maybe">Maybe</label>
             <input type="radio" id="maybe" name="starfish" value="maybe">
+
+            <input type="submit" value="send">
         </form>
     </article>
 
